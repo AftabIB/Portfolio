@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+/* Splash screen */
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: top 1s ease;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5em;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    margin: 0 0.1em;
+    /* Adjust the margin value as needed */
+}
+
+.logo.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logo.fade {
+    opacity: 0;
+    transform: translateY(150px);
+}

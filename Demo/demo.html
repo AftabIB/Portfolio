@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/skins/color-1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./images/AB logo.png">
+
+        <!-- Style Switcher -->
+        <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+        <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+        <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+        <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+        <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+        <link rel="stylesheet" href="css/style-switcher.css">
+    </head>
+
+    <body>
+        <div class="splash-overlay">
+            <div class="overlay-part top"></div>
+            <div class="overlay-part bottom"></div>
+            <div class="splashlogo-header">
+                <span class="splashlogo">W</span>
+                <span class="splashlogo">e</span>
+                <span class="splashlogo">l</span>
+                <span class="splashlogo">c</span>
+                <span class="splashlogo">o</span>
+                <span class="splashlogo">m</span>
+                <span class="splashlogo">e</span>
+            </div>
+        </div>
+        <!-- Main Container start -->
+        <div class="main-container">
+            <!-- Aside start -->
+            <div class="aside">
+                <div class="logo">
+                    <!-- <a href="#"><span>A</span>ftab</a> -->
+                    <img src="./images/AB logo.png" alt="Logo">
+                </div>
+                <!-- navigation toggler / hamburger menu -->
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+
+                <ul class="nav">
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="#Skills"><i class="fa fa-list"></i>Skills</a></li>
+                    <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i>Contacts</a></li>
+                </ul>
+            </div>
+
+            <!-- Aside end -->
+
+            <!-- Main Content start -->
+            <div class="main-content">
+
+                <!-- home section start -->
+                <section class="home active section" id="home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="home-info padd-15">
+                                <h3 class="hello">Hello, My name is <span class="name">Aftab Bhadgaonkar</span></h3>
+                                <h3 class="my-profession">I am <span class="typing">Web Designer</span></h3>
+                                <p>
+                                    I am currently pursuing a B.Tech. in Computer Science and Engineering from Walchand
+                                    College of Engineering. As an
+                                    enthusiastic web developer and UI designer, I am passionate about creating
+                                    innovative and user-centric digital
+                                    experiences. I have a keen interest in problem-solving, Database Systems, Operating
+                                    Systems
+                                    and SQL. Outside of my academic and
+                                    professional pursuits, I enjoy photography, have a technical interest in cars and
+                                    bikes, and find relaxation in painting
+                                    and gaming.
+                                </p>
+                                <a href="https://drive.google.com/file/d/1v2BpyBl2G8sD2rt0a5NWcbALLDDcXlfz/view?usp=sharing"
+                                    class="btn" target="_blank">Download CV</a>
+                            </div>
+                            <div class="home-img padd-15">
+                                <model-viewer src="https://models.readyplayer.me/66c19f61b8d58a94a82d21ea.glb"
+                                    alt="Aftab Bhadgaonkar Avatar" auto-rotate camera-controls ar
+                                    camera-target="0m 1m 0m" field-of-view="30deg" style="height: 500px; width: 100%;">
+                                </model-viewer>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- home section end -->
+            </div>
+            <!-- Main Content end -->
+        </div>
+        <!-- Main Container end -->
+
+        <!-- Style Switcher start -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog"></i> <!-- fa-spin-->
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- Style Switcher end -->
+
+        <!-- JS Files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+            integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+        <script src="js/style-switcher.js"></script>
+        <script src="js/skillTabSwitch.js"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+        <!-- <script src="js/app.js"></script> -->
+    </body>
+
+</html>
