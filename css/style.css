@@ -1146,4 +1146,9 @@ h3.my-profession {
     h3.hello {
         margin-top: 70px;
     }
+
+    .splashlogo {
+        font-size: 1.05em;
+        text-align: center;
+    }
 }
