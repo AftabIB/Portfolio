@@ -1008,10 +1008,10 @@ h3.my-profession {
 }
 
 
-/* Media Queries  */
+/* Media Queries */
 
-@media (max-width:1199px) {
-
+/* max-width: 1199px */
+@media (max-width: 1199px) {
     .aside {
         left: -270px;
     }
@@ -1020,12 +1020,9 @@ h3.my-profession {
         left: 0;
     }
 
-    .aside .nav-toggler {
-        display: flex;
-        left: 4%;
-    }
-
+    .aside .nav-toggler,
     .aside .nav-toggler.open {
+        display: flex;
         left: 4%;
     }
 
@@ -1043,7 +1040,8 @@ h3.my-profession {
     }
 }
 
-@media (max-width:991px) {
+/* max-width: 991px */
+@media (max-width: 991px) {
 
     .contact .contact-info-item,
     .projects .projects-item,
@@ -1060,35 +1058,29 @@ h3.my-profession {
     .home .home-img {
         display: none;
     }
-}
 
-@media (max-width:460px) {
-    h3.hello {
-        margin-top: 70px;
+    .splashlogo {
+        font-size: 1.8em;
+        text-align: center;
     }
 }
 
-@media (max-width:767px) {
-
-    .contact .contact-form .col-6,
-    .projects .projects-item,
-    .Skills .Skills-item,
-    .about .about-content .education1,
-    .about .about-content .education2,
-    .about .about-content .skills,
-    .about .about-content .personal-info {
-        flex: 0 0 100%;
-        max-width: 100%;
+/* max-width: 768px */
+@media (max-width: 768px) {
+    .tab-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .about .about-content .timeline .timeline-item {
-        padding: 5% 10%;
+    .tab-btn {
+        margin: 5px 0;
     }
-}
 
-/* footer */
+    .Skills .Skills-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 
-@media (max-width: 720px) {
     .footer {
         text-align: center;
         padding: 20px 5%;
@@ -1108,24 +1100,24 @@ h3.my-profession {
         text-align: center;
         font-size: 0.9em;
     }
+
+    .contact .contact-form .col-6,
+    .projects .projects-item,
+    .Skills .Skills-item,
+    .about .about-content .education1,
+    .about .about-content .education2,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about .about-content .timeline .timeline-item {
+        padding: 5% 10%;
+    }
 }
 
-@media (max-width: 768px) {
-    .tab-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tab-btn {
-        margin: 5px 0;
-    }
-
-    .Skills .Skills-item {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
+/* max-width: 576px */
 @media (max-width: 576px) {
     .tab-container {
         flex-direction: column;
@@ -1141,5 +1133,17 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
         padding: 10px;
+    }
+
+    .splashlogo {
+        font-size: 1.05em;
+        text-align: center;
+    }
+}
+
+/* max-width: 460px */
+@media (max-width: 460px) {
+    h3.hello {
+        margin-top: 70px;
     }
 }
